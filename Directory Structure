@@ -1,0 +1,12 @@
+nodejs-app/
+│
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml  # GitHub Actions Workflow file
+│
+├── Dockerfile         # Dockerfile for Node.js app
+├── kubernetes/
+│   └── deployment.yaml # Kubernetes Deployment and Service YAML files
+├── package.json       # Node.js dependencies and scripts
+├── app.js             # Sample Node.js application code
+└── README.md          # Explanation of the project

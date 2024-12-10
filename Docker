@@ -1,0 +1,18 @@
+#Node.js image as base
+FROM node:16
+
+#working directory
+WORKDIR /app
+
+#package.json and install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
+
+#the rest of the application code
+COPY . .
+
+#port for the application
+EXPOSE 3000
+
+# Start the app
+CMD ["npm", "start"]
